@@ -5,8 +5,12 @@
     body {
       padding-top: 40px;
       padding-bottom: 40px;
-    
-
+      margin: 100px;
+    }
+    #intro {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
     }
     #profile{
       height: 175px;
@@ -28,9 +32,10 @@
     }
     .name{
       color:black;
-      
+    
+
     }
-    .links a{
+    .individuallinks a{
       color:rgb(76, 93, 116);
       text-decoration: none;
       /*text-align: center;
@@ -41,18 +46,22 @@
    .items {
       display: flex;
       flex-direction: column;
-      /*align-items: center;*/
       gap: 0px;
       } 
 
-    .links {
-      background-color: aqua;
+    .individuallinks {
+      /*background-color: aqua;*/
       column-gap:10px;
       display: flex;
       align-items: center;
       justify-content: flex-start;
       padding:10px;
 
+    }
+    #links {
+     margin-left: auto; 
+     margin-right: auto;
+      
     }
 
    /**{
@@ -65,23 +74,27 @@
 
 <body>
   <div class="items"> 
+    <div id="intro">
+      <div class="profile picture">
+        <img id="profile" src="https://i.imgur.com/1Qm19vS.jpeg">
+      </div>
+      <h2 class="name"> Will Grieger</h2>
+   </div>
+  
+    <div id="links">
 
-    <div class="profile picture">
-      <img id="profile" src="https://i.imgur.com/1Qm19vS.jpeg">
-    </div>
-    <h2 class="name"> Will Grieger</h2>
-    
-    <div class="links">
-      <img class="thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Linkedin-logo-blue-In-square-40px.png">
-        <a target="_blank" href="https://www.linkedin.com/in/will-grieger-aaa65316a/">LinkedIn</a>
-    </div>
-    <div class="links">
-      <img class="thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/5/57/Zenit.gif">
-        <a target="_blank" href="https://www.flickr.com/people/willyg_/">Photography Portfolio</a>
-    </div>
-    <div class="links">   
-      <img class="thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Email_%2889509%29_-_The_Noun_Project.svg">
-        <a target="_blank" href=mailto:willgrieger@outlook.com> Contact via Email</a>
+      <div class="individuallinks">
+        <img class="thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Linkedin-logo-blue-In-square-40px.png">
+          <a target="_blank" href="https://www.linkedin.com/in/will-grieger-aaa65316a/">LinkedIn</a>
+      </div>
+      <div class="individuallinks">
+        <img class="thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/5/57/Zenit.gif">
+          <a target="_blank" href="https://www.flickr.com/people/willyg_/">Photography Portfolio</a>
+      </div>
+      <div class="individuallinks">   
+        <img class="thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Email_%2889509%29_-_The_Noun_Project.svg">
+          <a target="_blank" href=mailto:willgrieger@outlook.com> Contact via Email</a>
+      </div>
     </div>
   </div>
 
